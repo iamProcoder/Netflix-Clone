@@ -38,7 +38,7 @@ const PromotionalMovie = () => {
             <span>More Detail</span>
           </button>
         </div>
-        <h1 className='w-96 leading-snug pt-4 font-semibold max-w-sm h-20'>
+        <h1 className='w-96 max-xs:w-full leading-snug pt-4 font-semibold max-w-sm h-20'>
         {
           TextTrim(`${movie?.overview}`, 250)
         }

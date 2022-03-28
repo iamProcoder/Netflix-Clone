@@ -67,15 +67,15 @@ const Plans = () => {
                 Object.entries(plans).map(([planId, planData]) => {
                     const isUserPlanSelected = userIdPlans.tUserId === user.uid && userIdPlans.tPlanId === planId;
                     return (
-                      <div key={planId} className={`flex justify-between p-5 opacity-80 hover:opacity-100 ${isUserPlanSelected && 'border-1 border-gray-500 border-solid rounded'}`}>
-                        <div className="plan_info">
+                      <div key={planId} className={`flex justify-between p-5 opacity-80 hover:opacity-100 ${isUserPlanSelected && 'border-1 border-gray-500 border-solid rounded max-xs:p-2'}`}>
+                        <div className="max-xs:text-xs max-xs:p-2">
                           <h5>Netflix {planData.PlanName}</h5>
                           <h6>{planData.Description}</h6>
                         </div>
                         <button 
                             onClick={() => planChange(userIdPlans.tUserId, planId)}
                             disabled={ isUserPlanSelected ? true : false }
-                            className={`${isUserPlanSelected ? 'bg-gray-500' : 'bg-red-600'} border-none cursor-pointer text-white font-bold py-2 px-4 text-sm`}
+                            className={`${isUserPlanSelected ? 'bg-gray-500' : 'bg-red-600'} border-none cursor-pointer text-white font-bold py-2 px-4 text-sm max-xs:text-xs max-xs:py-1 max-xs:px-2`}
                         >
                             {isUserPlanSelected ? 'Selected Package' : 'Subscribe'}
                         </button>

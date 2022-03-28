@@ -23,17 +23,20 @@ const Header = () => {
         <div className="fixed">
           <div className="w-full justify-start mt-1 mb-2 sm:mb-0 lg:flex lg:items-center">
           <img src={Logonetflix} alt="Netflix" className="w-24 object-contain fixed cursor-pointer" onClick={() => navigate("/")} />
-            <div className="ml-32 text-sm lg:flex-grow">
-                <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}  onClick={() => navigate("/")}>MainPage</div>
-                <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}  onClick={() => navigate("/serious")}>Series</div>
-                <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}>Movies</div>
-                <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}>New</div>
-                <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}>My List</div>
-            </div>
-          </div>
+                   
+              <div className="max-xs:text-xs max-xs:inline-flex max-xs:-ml-1 max-xs:mt-8 ml-32 text-sm lg:flex-grow" id="mobile-menu">
+                  <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}  onClick={() => navigate("/")}>MainPage</div>
+                  <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}  onClick={() => navigate("/serious")}>Series</div>
+                  <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}>Movies</div>
+                  <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}>New</div>
+                  <div className={`mt-0 lg:inline-block lg:mt-0 ${isNavFixed ? 'hover:text-gray-500' : 'hover:text-white hover:bg-opacity-60'} hover:bg-black p-2 mr-4 rounded cursor-pointer`}>My List</div>
+              </div>
+            
+          
           <div className="justify-end rounded">
-            <img src={ProfileImg} alt="Profile" className="h-10 w-24 object-contain fixed -mt-5 right-0 cursor-pointer" onClick={() => navigate("/profile")} />
+            <img src={ProfileImg} alt="Profile" className="h-10 w-24 max-xs:h-6 max-xs:w-16 object-contain cursor-pointer fixed -mt-5 max-xs:-mt-14 right-0" onClick={() => navigate("/profile")} />
           </div>
+        </div>
         </div>
       </nav>
 

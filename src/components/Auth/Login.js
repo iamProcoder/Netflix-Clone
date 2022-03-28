@@ -32,7 +32,7 @@ const Login = ({location}) => {
         >
           Sign In
         </button>
-        <div className="w-full h-100vh z-index-1 bg-rgba-opacity bg-linear" />
+        <div className="w-full h-100vh max-xs:h-135vh z-index-1 bg-rgba-opacity bg-linear" />
       </div>
       <div className="flex flex-col justify-center items-center w-full z-index-1 p-5 text-white absolute mx-auto top-1/3 left-0 right-0">
         {signIn ? (
@@ -50,7 +50,7 @@ const Login = ({location}) => {
               membership.
             </h3>
 
-            <div className="h-80 m-5">
+            <div className="m-5">
               <form>
                 <input
                   type="email"

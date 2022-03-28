@@ -8,6 +8,7 @@ module.exports = {
         '128': '32rem',
         '1024': '64rem',
         '100vh': '100vh',
+        '135vh': '135vh',
       },
       zIndex: {
         'index-1': '1'
@@ -29,7 +30,10 @@ module.exports = {
       },
       borderWidth:{
         '1': '1px'
-      }
+      },
+      screens: {
+        'max-xs': {'max': '769px'}, // @media (max-width: 639px)
+      },
     },
   },
   plugins: [],

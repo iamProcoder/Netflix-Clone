@@ -12,7 +12,7 @@ import Profile from './components/Account/Profile';
 const App = () => {
 
   return (
-    <div className="app">
+    <div className="app h-full">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />

@@ -64,7 +64,7 @@ const Register = ({locationState}) => {
   }
   
   return (
-    <div className="max-w-sm p-16 mx-auto bg-rgba-opacity-08">
+    <div className="max-w-sm p-16 max-xs:p-12 mx-auto bg-rgba-opacity-08">
       <form className="flex flex-col items-center">
         <h1 className="font-semibold text-3xl mb-5">Sign In</h1>
         <input
